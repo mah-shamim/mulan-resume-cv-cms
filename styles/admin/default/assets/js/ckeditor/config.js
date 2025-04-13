@@ -23,7 +23,8 @@ CKEDITOR.editorConfig = function (config) {
         {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi']},
         {name: 'styles'},
         {name: 'colors'},
-        {name: 'about'}
+        {name: 'about'},
+//        {name: 'other', items: ['simplebutton']}
     ];
 
     // Remove some buttons provided by the standard plugins, which are
@@ -41,4 +42,5 @@ CKEDITOR.editorConfig = function (config) {
     config.height = '350px';
 
     config.extraPlugins = 'simplebutton';
+    config.allowedContent = true;
 };

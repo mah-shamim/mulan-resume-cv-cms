@@ -678,9 +678,30 @@
                 </div>
                 <div class="tab-pane" id="seo">
                     <div class="form-group">
+                        <label class="col-sm-2 control-label"><?php echo lang('settings_meta_keywords') ?></label>
+                        <div class="compose-message-editor col-sm-10">
+                            <textarea class="form-control" name="setting[meta_keywords]"><?php echo set_value('setting[meta_keywords]', $item->meta_keywords) ?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group-separator"></div>
+                    <div class="form-group">
                         <label class="col-sm-2 control-label"><?php echo lang('settings_meta_description') ?></label>
                         <div class="compose-message-editor col-sm-10">
                             <textarea class="form-control" name="setting[meta_description]"><?php echo set_value('setting[meta_description]', $item->meta_description) ?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group-separator"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><?php echo lang('settings_meta_robots') ?></label>
+                        <div class="compose-message-editor col-sm-10">
+                            <textarea class="form-control" name="setting[meta_robots]"><?php echo set_value('setting[meta_robots]', $item->meta_robots) ?></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group-separator"></div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label"><?php echo lang('settings_meta_twitter_site') ?></label>
+                        <div class="compose-message-editor col-sm-10">
+                            <textarea class="form-control" name="setting[meta_twitter_site]"><?php echo set_value('setting[meta_twitter_site]', $item->meta_twitter_site) ?></textarea>
                         </div>
                     </div>
                     <div class="form-group-separator"></div>

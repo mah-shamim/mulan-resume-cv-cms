@@ -56,3 +56,4 @@ $route['admin'] = 'admin/login';
 $route['post/(:any)'] = 'post/index/$1';
 $route['project/(:any)'] = 'project/index/$1';
 $route['appointments'] = 'appointments/index';
+$route['sitemap\.xml'] = "sitemap/index";

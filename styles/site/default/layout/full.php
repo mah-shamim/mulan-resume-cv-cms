@@ -7,6 +7,19 @@
         <meta name="author" content="Marwa El-Manawy <marwa@elmanawy.info>" />
         <meta name="description" content="<?php echo config('meta_description') ?>">
         <meta name="Keywords" content="<?php echo config('meta_keywords') ?>">
+        <meta name="robots" content="<?php echo config('meta_robots') ?>"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="<?php echo config('title') ?>"/>
+        <meta property="og:description" content="<?php echo config('meta_description') ?>"/>
+        <meta property="og:url" content="<?php echo current_url() ?>"/>
+        <meta property="og:site_name" content="<?php echo config('title') ?>"/>
+        <meta property="og:image" content="<?php echo base_url() ?>cdn/settings/<?php echo config('favicon') ?>"/>
+        <meta name="twitter:card" content="<?php echo config("title") ?>">
+        <meta name="twitter:image" content="<?php echo config("favicon") ?>">
+        <meta name="twitter:title" content="<?php echo config("title") ?>">
+        <meta name="twitter:description" content="<?php echo config('meta_description') ?>">
+        <meta name="twitter:site" content="@<?php echo config('meta_twitter_site') ?>">
         <link rel="shortcut icon" href="<?php echo base_url() ?>cdn/settings/<?php echo config('favicon') ?>" type="image/x-icon" />
         <title><?php echo config('title') ?></title>
         <!-- Bootstrap -->
@@ -29,8 +42,8 @@
         <?php endif ?>
         <?php if (config('direction') == 'ltr' & config('display_dark_mode') == '1'): ?>
             <link rel="stylesheet" href="<?php echo STYLE_CSS ?>/dark-mode-ltr.css" type="text/css">
-            <?php endif ?>
-           <?php if (config('direction') == 'rtl' & config('display_dark_mode') == '1'): ?>
+        <?php endif ?>
+        <?php if (config('direction') == 'rtl' & config('display_dark_mode') == '1'): ?>
             <link rel="stylesheet" href="<?php echo STYLE_CSS ?>/dark-mode-rtl.css" type="text/css">
         <?php endif ?>
         <?php if (config('color') == 'default'): ?><link rel="stylesheet" href="<?php echo STYLE_CSS ?>/colors/default.css" type="text/css"><?php endif ?>
@@ -58,7 +71,7 @@
             <?php endif ?>
         <?php endif ?>
     </head>
-    <body <?php if(config('display_dark_mode') == '1'): ?>class="dark"<?php endif ?>>
+    <body <?php if (config('display_dark_mode') == '1'): ?>class="dark"<?php endif ?>>
         <!-- preloader -->
         <div id="preloader">
             <div id="preloader-circle">
