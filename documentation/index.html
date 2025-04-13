@@ -368,6 +368,23 @@
                 <div class="block" id="change_log">
                     <h1 class="page-header">Change Log</h1>
                     <div style="margin-bottom: 20px;">
+                        <b>Version 2.3.2 Released (27 April 2024):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Adding Sitemap.<br>
+                            2- More features for SEO (Robots, Meta Twitter, og, Meta Keywords, Meta Descriptions).<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.3.2 to 2.4</b><br>
+                            1- Run the queries provided to your database from phpMyAdmin.<br>
+                            INSERT INTO `settings` (`key`) VALUES ('meta_keywords');  <br>
+                            INSERT INTO `settings` (`key`) VALUES ('meta_robots');  <br>
+                            INSERT INTO `settings` (`key`) VALUES ('meta_twitter_site');   <br>
+                            2- Extract and upload source files to your server.<br>
+                            3- Update the database file located into "root/application/config/database.php"<br>
+                            4- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
                         <b>Version 2.3.2 Released (28 August 2021):</b> <br>
                         <p style="background-color: #f9f9f9; padding: 5px;">
                             1- Adding more features for CKEditor.<br>
@@ -419,8 +436,7 @@
 
                             2- Extract and upload source files to your server.<br>
                             3- Update the database.php file located into "root/application/config/database.php"<br>
-                            4- Update the email.php file located into "root/application/config/email.php"
-                            5- You are done.
+                            4- You are done.
                         </p>
                     </div>
                     <div style="margin-bottom: 20px;">

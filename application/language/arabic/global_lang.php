@@ -279,3 +279,5 @@ $lang['display_plan'] = 'اظهار الخطة';
 $lang['plan_icon'] = 'الصورة';
 $lang['featured_item'] = 'عنصر مميز';
 $lang['my_recent_offers'] = 'آخر العروض و الاسعار';
+$lang['settings_meta_robots'] = 'Meta robots';
+$lang['settings_meta_twitter_site'] = 'Meta twitter site';

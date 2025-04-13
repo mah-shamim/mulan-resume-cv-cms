@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Aug 08, 2021 at 03:42 AM
--- Server version: 5.7.23
--- PHP Version: 7.2.10
+-- Generation Time: Apr 27, 2023 at 04:47 AM
+-- Server version: 5.7.36
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mulan`
+-- Database: `mulan_cms`
 --
 
 -- --------------------------------------------------------
@@ -489,6 +488,9 @@ INSERT INTO `settings` (`key`, `value`, `default_value`, `required`) VALUES
 ('language', 'english', 'english', 1),
 ('map_key', '', NULL, 0),
 ('meta_description', 'Welcome to the Marwa El-Manawy home page, entry point to information about innovative Marwa El-Manawy products and projects, business solutions and business consulting services', 'desc', 0),
+('meta_keywords', NULL, NULL, 0),
+('meta_robots', NULL, NULL, 0),
+('meta_twitter_site', NULL, NULL, 0),
 ('portfolio_comments', '1', NULL, 0),
 ('portfolio_related', '1', NULL, 0),
 ('post_latest_widget', '1', NULL, 0),

@@ -283,3 +283,5 @@ $lang['display_plan'] = 'Display Plan';
 $lang['plan_icon'] = 'Plan Icon';
 $lang['featured_item'] = 'Featured Item';
 $lang['my_recent_offers'] = 'My Recent Offers';
+$lang['settings_meta_robots'] = 'Meta robots';
+$lang['settings_meta_twitter_site'] = 'Meta twitter site';
