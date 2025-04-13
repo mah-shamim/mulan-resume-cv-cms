@@ -1,0 +1,70 @@
+.dark, #preloader, .dark .sub-page .sub-page-inner, .dark .portfolio-data, .dark .pulse-icon .circle-inner, .pulse-icon .circle-outer,
+.dark .my-photo,.dark .testimonial-content .testimonial-review, .dark .owl-dot span{
+    background: #101010;
+}
+.dark .header, .dark .special-block-bg, .dark .counter-block,.pricing-table,
+.dark .profile-picture-block, .dark .main-timeline .timeline-icon:before, .dark .label-portfolio,
+.dark .blog-grid-flex .blog-article, .dark .btn.btn-prev, .dark .social-media-block,
+.dark .profile-picture-block:before, .dark .profile-picture-block:after, .dark .widget, .dark .blog-post, .dark .about-author,
+.dark .comment-by a.reply, .dark .add-review-box, .dark .error-content .form-error-search input{ 
+    background: #191919;
+}
+.dark .progress, .dark .blog-grid-flex .article-link a, .dark .social-media-block a,
+::-webkit-scrollbar-track-piece, .dark .tagcloud a, .dark .share-buttons li a, .dark .home-slides .owl-dot span{
+    background: #242323;
+}
+.dark .section-head h4 span, .dark .service-block .service-text h4, .dark .widget-text h5 a, .dark .error-content .error-message h3, .dark .home-slides .slide-contact-info p,
+.dark .blog-grid-flex .article-content h4 a, .dark .blog-grid-flex .blog-article .comment-like, .dark .blog-grid-flex .blog-article .post-format, .dark .blog-grid-flex .blog-item-quote .comment-like span{
+    color: rgba(255, 255, 255, 0.8);
+}
+.dark p, .dark .header-main-menu li a, .dark .language-skill h4 span, .dark .skill-item span,
+.dark .typed-strings .typed{
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark .testimonial-review::after{
+    border-top-color: #242323;
+}
+.dark .section-head h4 {
+    border-right: 1px solid rgba(238, 238, 238, 0.3);
+}
+.dark .owl-dot.active span {
+    background: #11d6f0;
+}
+.dark .overlay, .dark .blog-grid-flex .blog-item-quote .article-img::after {
+    background: rgba(0, 0, 0, 0.7);
+}
+.dark .header-main-menu li a:hover, .dark .header-main-menu li a.active, .dark .portfolio-grid .portfolio-item:hover .portfolio-data,
+.dark .blog-grid-flex .blog-article .comment-like{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.dark .rating li i.half-star{
+    color: rgba(212, 212, 212, 0.3);
+}
+.dark .blog-grid-flex .blog-item-quote .comment-like, .dark .social-media-block a, .dark .tagcloud a{
+    border-color: transparent;
+}
+.dark .w-75, .dark .search-blog-input input{
+    border-color: rgba(221, 221, 221, 0.3);
+}
+.dark .widget .widget-title, .dark .widget-tabs li, .dark #add-review input, .dark #add-review textarea,
+.dark .error-content .form-error-search{
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.dark input[type=email],.dark input[type=text], .dark textarea{
+    background: transparent;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+}
+.dark .header-main-menu li a:hover, .dark .header-main-menu li a.active, .dark .testimonial-owner,
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,.dark .section-head h4, .dark .main-title h4, .dark .site-title{
+    color: #fff;
+}
+.dark .widget .search-blog-input .input:before{
+    background: transparent;
+}
+.dark .widget.search-widget {
+    padding: 20px 20px 0 20px;
+}
+#planrecommended:after{ border-left: 15px solid #191919;}
+#planrecommended:before {border-right: 15px solid #191919;}
+input, textarea {color: rgba(255, 255, 255, 0.9);}
+.cd-words-wrapper {color: rgba(255, 255, 255, 0.5);}

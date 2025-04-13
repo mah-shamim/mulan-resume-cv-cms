@@ -1,0 +1,209 @@
+/*
+Template Name: Mulan / CV Template + RTL
+Template URI: http://elmanawy.info/demo/mulan
+Description: Mulan for resume / cv / portfolio template that's suitable for freelanner and anyone want to create online portflolio
+Author: Marwa El-Manawy
+Author URL: https://elmanawy.info
+Version: 2.3
+*/
+a {
+    color: #20c997;
+}
+a:hover {
+    color: #20c997;
+}
+.pagination .paginate_button.active a  {
+    background-color: #20c997;
+    color: #ffffff;
+}
+.title-main-page h4:before {
+    border-color: #20c997;
+}
+.title-main-page p:after {
+    border-bottom: 5px solid #20c997;
+}
+.sub-title h6:before {
+    background: #20c997;
+}
+.section-head h4:before {
+    background: #20c997;
+}
+#preloader-circle span {
+    border: 8px solid #20c997;
+}
+.site-title span {
+    color: #20c997;
+}
+.header-main-menu li a i {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.responsive-header  {  
+    color: #20c997;
+}
+.bout-list-summry li .icon-info{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.special-block-bg::before {
+    border-color: #20c997 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #20c997;
+}
+.special-block-bg::after {
+    border-color: rgba(0, 0, 0, 0) #20c997 #20c997 rgba(0, 0, 0, 0);
+}
+.service-block:hover h4{
+    color: #20c997;
+}
+.overlay {
+    background: linear-gradient(-45deg,rgba(32, 201, 151, 0.74) 0,#20c997 40%,rgba(32, 201, 151, 0.51) 100%);
+}
+.pulse-icon a {
+    color: #20c997;
+}
+.counter-block::before {
+    border-color: #20c997 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #20c997;
+}
+.counter-block::after {
+    border-color: rgba(0, 0, 0, 0) #20c997 #20c997 rgba(0, 0, 0, 0);
+}
+.counter-block i {
+    color: #20c997;
+}
+.testimonial-review:before {
+    color: #20c997;
+}
+.owl-dot.active span{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.timeline.currecnt .timeline-icon:after, .main-timeline .timeline:hover  .timeline-icon:after{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.main-timeline .timeline.currecnt .title, .main-timeline .timeline:hover .title{color: #20c997; }
+.progress-bar {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.filter-tabs .active-filter, .filter-tabs .fil-cat:focus, .filter-tabs .fil-cat:hover {
+    color: #20c997;
+}
+.label-portfolio::before {
+    border-color: #20c997 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #20c997;
+}
+.label-portfolio > span {
+    color: #20c997;
+}
+.blog-grid-flex .blog-item:hover .blog-article > .article-link > a {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.blog-grid-flex .blog-item-quote .article-img::after {
+    background-color: #20c997;
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    border-bottom: 1px solid #20c997;
+}
+.bt-submit {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.contact-icon i {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.social-media-block::after {
+    border-color: rgba(0, 0, 0, 0) #20c997 #20c997 rgba(0, 0, 0, 0);
+}
+.social-media-block::before {
+    border-color: #20c997 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #20c997;
+}
+.social-media-block a{
+    color: #20c997;
+}
+.social-media-block a:hover{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.post-meta li:hover, .post-meta li a:hover{
+    color: #20c997;
+}
+#posts-nav li a:hover {
+    color: #20c997;
+}
+.comment-by a.reply:hover,
+.comment-by a.reply:hover i {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.search-blog-input input:hover,  .search-blog-input input:focus{
+    border: 1px solid #20c997;
+}
+.widget .search-blog-input .input button{
+    color: #20c997;
+}
+.widget-text h5 a:hover {
+    color: #20c997;
+}
+.tagcloud a:hover{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+    border: 1px solid #20c997;
+}
+.error-content .error-message h2 {
+    color: #20c997;
+}
+.error-content .error-message h2 {
+    color: #20c997;
+}
+.error-content .form-error-search .btn-search {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.error-content .description a {
+    color: #20c997
+}
+.profile-picture-block {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.my-photo {
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2)
+}
+.header-main-menu li a:hover, .header-main-menu li a.active {
+    background-color: rgba(32, 201, 151, 0.18);
+}
+.portfolio-grid .portfolio-item:hover .portfolio-data {
+    background-color: rgba(32, 201, 151, 0.65);
+}
+.portfolio-head-content {
+    background-color: rgba(32, 201, 151, 0.65);
+}
+.blog-grid-flex .blog-article .comment-like {
+    background-color: rgba(32, 201, 151, 0.6);
+}
+body::-webkit-scrollbar-thumb,
+.sub-page::-webkit-scrollbar-thumb,
+.header::-webkit-scrollbar-thumb{
+    background-color: rgba(32, 201, 151, 0.30);
+}
+img.responsive-logo {
+    border: 3px solid rgba(32, 201, 151, 0.30);
+}
+.widget .categories-list li a:hover, .widget .categories-list li a.active{
+    color: #20c997
+}
+div.datedropper.primary:before, div.datedropper.primary .pick-submit, div.datedropper.primary .pick-lg-b .pick-sl:before, div.datedropper.primary .pick-m, div.datedropper.primary .pick-lg-h{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+    background-size: 400% 400% !important;
+}
+#td-clock-0 .td-select:after {
+    box-shadow: 0 0 0 1px #20c997 !important;
+}
+#td-clock-0 .td-clock:before {
+    border-color: #20c997 !important;
+}
+.td-select.td-rubber svg{
+    stroke: #20c997 !important;
+}
+#td-clock-0 .td-lancette {
+    border: 2px solid #20c997 !important;
+}
+#td-clock-0 .td-clock {
+    box-shadow: 0 0 0 1px #20c997, 0 0 0 8px rgba(0, 0, 0, 0.05) !important;
+}
+.list-appointments li.available i{
+    background: linear-gradient(135deg,#20c997,#73fbd2,#20c997,#cafded,#73fbd2);
+}
+.p-price {color: #20c997;}
+#planrecommended {background: #20c997;}

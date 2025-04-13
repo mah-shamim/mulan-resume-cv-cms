@@ -1,0 +1,209 @@
+/*
+Template Name: Mulan / CV Template + RTL
+Template URI: http://elmanawy.info/demo/mulan
+Description: Mulan for resume / cv / portfolio template that's suitable for freelanner and anyone want to create online portflolio
+Author: Marwa El-Manawy
+Author URL: https://elmanawy.info
+Version: 2.3
+*/
+a {
+    color: #fd7e14;
+}
+a:hover {
+    color: #fd7e14;
+}
+.pagination .paginate_button.active a  {
+    background-color: #fd7e14;
+    color: #ffffff;
+}
+.title-main-page h4:before {
+    border-color: #fd7e14;
+}
+.title-main-page p:after {
+    border-bottom: 5px solid #fd7e14;
+}
+.sub-title h6:before {
+    background: #fd7e14;
+}
+.section-head h4:before {
+    background: #fd7e14;
+}
+#preloader-circle span {
+    border: 8px solid #fd7e14;
+}
+.site-title span {
+    color: #fd7e14;
+}
+.header-main-menu li a i {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.responsive-header  {  
+    color: #fd7e14;
+}
+.bout-list-summry li .icon-info{
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.special-block-bg::before {
+    border-color: #fd7e14 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fd7e14;
+}
+.special-block-bg::after {
+    border-color: rgba(0, 0, 0, 0) #fd7e14 #fd7e14 rgba(0, 0, 0, 0);
+}
+.service-block:hover h4{
+    color: #fd7e14;
+}
+.overlay {
+    background: linear-gradient(-45deg,rgba(253, 126, 20, 0.6) 0,#fd7e14 40%,rgba(253, 126, 20, 0.4) 100%);
+}
+.pulse-icon a {
+    color: #fd7e14;
+}
+.counter-block::before {
+    border-color: #fd7e14 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fd7e14;
+}
+.counter-block::after {
+    border-color: rgba(0, 0, 0, 0) #fd7e14 #fd7e14 rgba(0, 0, 0, 0);
+}
+.counter-block i {
+    color: #fd7e14;
+}
+.testimonial-review:before {
+    color: #fd7e14;
+}
+.owl-dot.active span{
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.timeline.currecnt .timeline-icon:after, .main-timeline .timeline:hover  .timeline-icon:after{
+     background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.main-timeline .timeline.currecnt .title, .main-timeline .timeline:hover .title{color: #fd7e14; }
+.progress-bar {
+   background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.filter-tabs .active-filter, .filter-tabs .fil-cat:focus, .filter-tabs .fil-cat:hover {
+    color: #fd7e14;
+}
+.label-portfolio::before {
+    border-color: #fd7e14 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fd7e14;
+}
+.label-portfolio > span {
+    color: #fd7e14;
+}
+.blog-grid-flex .blog-item:hover .blog-article > .article-link > a {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.blog-grid-flex .blog-item-quote .article-img::after {
+    background-color: #fd7e14;
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    border-bottom: 1px solid #fd7e14;
+}
+.bt-submit {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.contact-icon i {
+     background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.social-media-block::after {
+    border-color: rgba(0, 0, 0, 0) #fd7e14 #fd7e14 rgba(0, 0, 0, 0);
+}
+.social-media-block::before {
+    border-color: #fd7e14 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fd7e14;
+}
+.social-media-block a{
+    color: #fd7e14;
+}
+.social-media-block a:hover{
+     background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.post-meta li:hover, .post-meta li a:hover{
+    color: #fd7e14;
+}
+#posts-nav li a:hover {
+    color: #fd7e14;
+}
+.comment-by a.reply:hover,
+.comment-by a.reply:hover i {
+     background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.search-blog-input input:hover,  .search-blog-input input:focus{
+    border: 1px solid #fd7e14;
+}
+.widget .search-blog-input .input button{
+    color: #fd7e14;
+}
+.widget-text h5 a:hover {
+    color: #fd7e14;
+}
+.tagcloud a:hover{
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+    border: 1px solid #fd7e14;
+}
+.error-content .error-message h2 {
+    color: #fd7e14;
+}
+.error-content .error-message h2 {
+    color: #fd7e14;
+}
+.error-content .form-error-search .btn-search {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.error-content .description a {
+    color: #fd7e14
+}
+.profile-picture-block {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.my-photo {
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.header-main-menu li a:hover, .header-main-menu li a.active {
+    background-color: rgba(253, 126, 20, 0.18);
+}
+.portfolio-grid .portfolio-item:hover .portfolio-data {
+    background-color: rgba(253, 126, 20, 0.65);
+}
+.portfolio-head-content {
+    background-color: rgba(253, 126, 20, 0.65);
+}
+.blog-grid-flex .blog-article .comment-like {
+    background-color: rgba(253, 126, 20, 0.6);
+}
+body::-webkit-scrollbar-thumb,
+.sub-page::-webkit-scrollbar-thumb,
+.header::-webkit-scrollbar-thumb{
+    background-color: rgba(253, 126, 20, 0.30);
+}
+img.responsive-logo {
+    border: 3px solid rgba(253, 126, 20, 0.30);
+}
+.widget .categories-list li a:hover, .widget .categories-list li a.active{
+    color: #fd7e14
+}
+div.datedropper.primary:before, div.datedropper.primary .pick-submit, div.datedropper.primary .pick-lg-b .pick-sl:before, div.datedropper.primary .pick-m, div.datedropper.primary .pick-lg-h{
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+    background-size: 400% 400% !important;
+}
+#td-clock-0 .td-select:after {
+    box-shadow: 0 0 0 1px #fd7e14 !important;
+}
+#td-clock-0 .td-clock:before {
+    border-color: #fd7e14 !important;
+}
+.td-select.td-rubber svg{
+    stroke: #fd7e14 !important;
+}
+#td-clock-0 .td-lancette {
+    border: 2px solid #fd7e14 !important;
+}
+#td-clock-0 .td-clock {
+    box-shadow: 0 0 0 1px #fd7e14, 0 0 0 8px rgba(0, 0, 0, 0.05) !important;
+}
+.list-appointments li.available i{
+    background: linear-gradient(135deg,#fd7e14,#fbb478,#fd7e14,#ffe7d3,#fbb478);
+}
+.p-price {color: #fd7e14;}
+#planrecommended {background: #fd7e14;}

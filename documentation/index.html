@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Marwa El-Manawy <marwa@elmanawy.info>" />
+        <title>Mulan - Resume / CV CMS</title>
+        <link href="assets/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/style.css" rel="stylesheet">
+        <script src="assets/jquery.min.js" ></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script>
+            $(document).ready(function () {
+                $(document).on("scroll", onScroll);
+
+                //smoothscroll
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
+                    $(document).off("scroll");
+
+                    $('a').each(function () {
+                        $(this).removeClass('active');
+                    })
+                    $(this).addClass('active');
+
+                    var target = this.hash,
+                            menu = target;
+                    $target = $(target);
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top + 2
+                    }, 500, 'swing', function () {
+                        window.location.hash = target;
+                        $(document).on("scroll", onScroll);
+                    });
+                });
+            });
+
+            function onScroll(event) {
+                var scrollPos = $(document).scrollTop();
+                $('.nav a').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("href"));
+                    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                        $('.nav a').removeClass("active");
+                        currLink.addClass("active");
+                    } else {
+                        currLink.removeClass("active");
+                    }
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="navbar navbar-default navbar-fixed-top">
+
+                <div class="navbar-inner menu_area">
+                    <div class="container">
+                        <a class="logo" href="http://elmanawy.info/" target="_blank" style="color: #000; font-weight: bold;">Mulan</a>
+                        <ul class="nav">
+                            <li><a class="active" href="#introduction">Introduction <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#system">System</a></li>
+                            <li><a href="#requirements">Requirements</a></li>
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#start">Getting Started</a></li>
+                            <li><a href="#change_log">Change Log</a></li>
+                            <li><a href="#support">Support Desk</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container content">
+
+
+                <div class="" id="introduction">
+                    <h1 class="page-header">Introduction</h1>
+                    <div class="intro-doc">
+                        <p>
+                            <strong style="color: #8dc63f;">Mulan - Resume / CV CMS</strong>
+
+                        </p>
+                        <ul>
+                            <li><strong>Item Name: </strong> Mulan - Resume / CV CMS</li>
+                            <li><strong>Item Version: </strong> v 2.3</li>
+                            <li><strong>Created: </strong> 21/1/2019</li>
+                            <li><strong>Last Update: </strong> 08/08/2021</li>
+                            <li><strong>Author:  </strong> <a href="https://elmanawy.info/">Marwa El-Manawy</a></li>
+                            <li><strong>Support Questions:  </strong> <a href="mailto:support@elmanawy.info">support@elmanawy.info</a></li>
+                        </ul>
+                    </div>
+                    <p>
+                        <strong>Hi there!</strong>
+                        Thank you for buying my web application.<br>
+                        This documentation is to help you regarding each step of customization. <br> <br>
+                    </p>
+                    <span style="color: red; font-weight: bold;">Please read the documentation carefully to understand how this script is made and how to edit this properly and how you install script. </span> 
+                    <br><br>
+                    <p><b>Thank You ..</b> </p>
+                </div>
+
+                <!-- About section -->
+                <div class="block" id="about">
+                    <h1 class="page-header">About</h1>
+                    <p>
+                        <b>Now, Lets get started to tell you about Mulan.</b> <br>
+                        <a href="https://elmanawy.info/demo/mulan-cms" target="_blank"><strong>Mulan - Resume/CV CMS</strong></a>
+                        is a PHP system developed to build your cv or resume,
+                        It comes with clean, secured, responsive, SEO friendly & trendy look design.
+                        You can easily add your Services, Experiences, Skills, Portfolios & Blogs without any coding skills.
+                        This script help you to promote yourself and your business.
+                        It's suitable for Freelancer, Coder, Photographer, Designer, ...
+                        <br>
+                    </p>
+                    <br><br>
+                    <p>
+                        Don't hesitate to contact me if you have inquiry or suggestions, and support at:
+                        <br>
+                        <a href="mailto:support@elmanawy.info">support@elmanawy.info</a>
+                    </p>
+                </div>
+
+                <!-- Features section -->
+                <div class="block" id="features">
+                    <h1 class="page-header">Features</h1>
+
+                    <div class="row placeholders">
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-mobile-phone"></i>
+                            </span>
+                            <h4>100% Responsive Design</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-umbrella"></i>
+                            </span>
+                            <h4>Clean Coding</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-flask"></i>
+                            </span>
+                            <h4>Easy Customization</h4>
+                        </div>
+                        <div class="col-xs-6 col-sm-3 placeholder">
+                            <span class="img-responsive">
+                                <i class="fa fa-comments-o"></i>
+                            </span>
+                            <h4>Great Support</h4>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <strong>Security</strong>
+                            <ul>
+                                <li>Totally secured system (SQL injection, XSS, CSRF)</li>
+                                <li>Built on powerful CodeIgniter Framework that has been tried and tested by millions of developers.</li>
+                                <li>Passwords are encrypted using PHPass library to make sure your data is safe.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Admin Panel</strong>
+                            <ul>
+                                <li>Flexible control panel system with full options.</li>
+                                <li>Only admin role can login admin panel.</li>
+                                <li>Change website settings(name, logo, favicon, map key, google analytics,recaptcha key settings, and more...).</li>
+                                <li>Change website +10 colors (red, blue, orange, green ,pink, ...).</li>
+                                <li>Change website Language<strong>(English or Arabic)</strong>.</li>
+                                <li>Change website Direction(LTR or RTL).</li>
+                                <li>Change General settings(appear and disappear <strong>widgets</strong>).</li>
+                                <li>Change website <strong>SEO</strong> settings (meta description).</li>
+                                <li>Change Contact information (email, phone,address,...).</li>
+                                <li>Change About you details (profile picture, description,summery,...).</li>
+                                <li>Change +20 Social media links.</li>
+                                <li>Create unlimited <strong>articles</strong> and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Projects</strong> and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Work History</strong> and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Education History</strong> and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Skills</strong> and its categories and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Testimonial</strong> and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Clients</strong> and manage it (add, edit, delete, view).</li>
+                                <li>Create unlimited <strong>Pricing Plans</strong> and manage it (add, edit, delete, view).</li>
+                                <li>Create Unlimited <strong>Services</strong> and manage it (add, edit, delete, view).</li>
+                                <li>View and Delete <strong>Messages</strong> from your clients(You will also receive this message at your email).</li>
+                                <li>Admin control displaying each section in website like(Clients, Testimonials, Blog, Portfolio, Services, ).</li>
+                                <li>Admin manage  <strong>appointments </strong> and and  <strong>Receive requests appointments </strong>.</li>
+                                <li>Admin control his <strong>appointments </strong> by display on/off the day and time.</li>
+                                <li>Ability to display on / off Chat script</li>
+                                <li>Ability to display on / off pricing plans section and each individual plan.</li>
+                                <li>Admin can choose  <strong>light mode </strong> or  <strong>dark mode </strong> for website</li>
+                                <li>Totally with this admin panel can manage and control every thing appear in website with full option.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Key Features</strong>
+                            <ul>
+                                <li>Supported <strong>Google Analytics</strong></li>
+                                <li>Supported <strong>Google Recaptcha</strong></li>
+                                <li><strong>RTL</strong> Supported for website and admin panel.</li>
+                                <li><strong>Disqus</strong> Comments with awesome reactions and more...</li>
+                                <li>There are <strong>10+ color</strong> for website.</li>
+                                <li>There are 20+ <strong>Social media</strong>.</li>
+                                <li>Easy to install and usability(without any coding knowledge needed).</li>
+                                <li>Awesome Design for Website and admin panel</li>
+                                <li>Fully <strong>Responsive</strong> for Website and admin panel</li>
+                                <li>Clean Code with hight performance.</li>
+                                <li>Easy Customization</li>
+                                <li>Friendly with <strong>SEO</strong>.</li>
+                                <li>High performance.</li>
+                                <li>Well Documentation we explained each point in details.</li>
+                                <li><strong>Crisp</strong> Chat script</li>
+                                <li>Light and Dak mode for website. </li>
+                                <li>More features will coming up.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Trendy website interface included.</strong>
+                            <ul>
+                                <li>Home page with
+                                    <ul>
+                                        <li>About You Summary.</li>
+                                        <li>Resume included(Work history, Education history, Skills).</li>
+                                        <li>Testimonial(Your clients feedback.</li>
+                                        <li>Slider for your clients.</li>
+                                        <li>Latest Blog posts.</li>
+                                        <li>Projects.</li>
+                                        <li>Contact information and social media links.</li>
+                                        <li>Contact form that helps your clients to reach or hire you.</li>
+                                        <li>List of appointments availability and not availability (days and time).</li>
+                                        <li>booking an appointment form.</li>
+                                        <li>Pricing Plans.</li>
+                                    </ul>
+                                </li>
+                                <li>Single page for all blog posts with widgets(search post, categories, popular posts, latest posts)</li>
+                                <li>Single page for blog post with widgets(search post, categories, related posts, latest posts, tags)</li>
+                                <li>Single Page for Project with project details and related projects widget. </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Requirements section -->
+                <div class="block" id="system">
+                    <h1 class="page-header">System</h1>
+                    <ul>
+                        <li>Backend Framework: Built on CodeIgniter</li>
+                        <li>Frontend Framework: Built on Bootstrap</li>
+                        <li>Requires PHP 5.6+</li>
+                        <li>Supports MySQL, Mysqli.</li>
+                    </ul>
+                </div>
+
+                <!-- Requirements section -->
+                <div class="block" id="requirements">
+                    <h1 class="page-header">Requirements</h1>
+                    <p>
+                        You will need the following softwares to customize this template. <br><br>
+                    </p>
+                    1- Code Editing Software (eg: Netbeans, Sublime Text or Notepad)<br>
+                    2- Web Browser for testing (eg: Google Chrome or Mozilla Firefox)<br>
+                    3- FTP Tool to upload files to Server (eg: FileZilla)<br>
+                </div>
+
+                <!-- Installation section -->
+                <div class="block" id="installation">
+                    <h1 class="page-header">Installation</h1>
+                    1- Create a database and user have a full privileges to the database. <br>
+                    2- Import the file <b>Database.sql</b> to your database from phpMyAdmin<br>
+                    3- Extract and upload source files to your server.<br>
+                    4- Update the database.php file located into <b>"root/application/config/database.php"</b><br>
+                    <img src="assets/images/database.png"><br>
+                    5- You are done.
+                    <br><br>
+
+                    <h2 class="inside-title">To integrate Disqus on your website.</h2>
+
+                    <ol class="list-inline">
+                        <li>
+                            a. Follow this link to guide you how to install it. 
+                            <a href="https://help.disqus.com/installation/universal-embed-code">https://help.disqus.com/installation/universal-embed-code</a><br>
+                        </li>
+                        <li>
+                            b. after integrate you will get embeded code like the code in image below <br><br>
+                            <img src="assets/images/disqus_code.jpg" /><br>
+                        </li>
+                        <li>
+                            c. Then copy the website name in this url and adding it in your admin panel setting in Disquss username field. <br><br>
+                            <img src="assets/images/disqus_admin.jpg" />
+                        </li>
+
+                        <li>
+                            e. Finally you will get this awesome comments form and reactions in your website. <br><br>
+                            <img src="assets/images/comment.png" />
+                        </li>
+                    </ol>  
+
+                    <br><br>
+
+                    <br>
+                    <h2 class="inside-title">For Translation files, This locations for each language:</h2>
+                    There is 2 languages English and Arabic you can choose your language from admin panel settings, You can edit the translations in this paths:
+                    <b>application/language/english/..</b> or <b>application/language/arabic/..</b> <br><br>
+                    <img src="assets/images/choose-lang.png"><br><br>
+                    <img src="assets/images/edit-lang.png"><br><br>
+                    <br><br>
+
+                    <h2 class="inside-title">Integrate Google Recaptcha </h2><br>
+                    <b>Step 1:</b> Registering for Google reCAPTCHA <a href="https://www.google.com/recaptcha/admin/site/337503377">here</a><br>
+                    <img src="assets/images/recaptcha1.jpg"><br><br>
+                    <b>Step 2:</b> You will get the site key and secret key<br>
+                    <img src="assets/images/recaptcha2.png"><br>
+                    <img src="assets/images/recaptcha3.png"><br><br>
+                    <b>Step 3:</b> Adding the site key and secret key to google recaptch setting at admin panel.<br>
+                    <img src="assets/images/recaptcha4.png"><br>
+                    <br><br>
+
+                    <h2 class="inside-title">Google Analytics:</h2>
+                    1- go to https://analytics.google.com to create site<br>
+                    2- go to admin area, Settings -> Google analytics Tracking ID and copy it Then paste it in your website admin panel.<br>
+                    <br><br>
+                    <h2 class="inside-title" id="install-crisp"> 4- To integrate Crisp on your website </h2>
+
+                    <b>Step 1:</b> Create an account
+                    <a href="https://app.crisp.chat/initiate/signup/">Sign up here</a><br>
+                    <b>Step 2:</b> Select embeded code in left side and choose Html Tab then copy the crisp website ID <br><br>
+                    <img src="assets/images/crisp-1.png" /><br>
+                    <img src="assets/images/crisp-2.png" /><br><br>
+                    <b>Step 3:</b>Login to admin panel > settings > API Keys then check to display Crisp label and paste your ID<br><br>
+                    <img src="assets/images/crisp-3.png" /><br><br>
+                    <b>Step 4:</b> Finally you will get the Crisp chat in your website, Enjoy. <br><br>
+                    <img src="assets/images/crisp-4.png" /><br>
+
+                </div>
+
+
+                <!-- Getting stat section -->
+                <div class="block" id="start">
+                    <h1 class="page-header">Getting Start</h1>
+                    <p>You just need to follow this steps to keep an eye on your new website: </p>
+                    <br>
+                    <p>
+                        go to this link before you go on: 
+                        <br><br>
+                        http://yourDomainName.com/admin<br>
+                        <br>
+                        <img class="module-pics" src="assets/images/login.png">
+                        <br>
+
+                        Type your admin username and password: <br><br>
+
+                        <strong>Email:</strong> admin@admin.com<br>
+
+                        <strong>Password:</strong> 123456<br>
+                        <br>
+                        and follow those instructions 
+                        <br>
+                    </p>
+                </div>
+
+                <div class="block" id="change_log">
+                    <h1 class="page-header">Change Log</h1>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.3.2 Released (28 August 2021):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Adding more features for CKEditor.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.3.1 to 2.3.2</b><br>
+                            1- Extract and upload source files to your server.<br>
+                            2- Update the database file located into "root/application/config/database.php"<br>
+                            3- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.3.1 Released (24 August 2021):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Fixing issue.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.3 to 2.3.1</b><br>
+                            1- Extract and upload source files to your server.<br>
+                            2- Update the database file located into "root/application/config/database.php"<br>
+                            3- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.3 Released (08 August 2021):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Fixing design issue in Dark Mode.<br>
+                            2- Ability to display on / off Appointments section.<br>
+                            3- Pricing Plans.<br>
+                            4- Ability to display on / off Pricing Plans section.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.2.1 to 2.3</b><br>
+                            1- Run the queries provided to your database from phpMyAdmin.<br>
+                            INSERT INTO `settings` (`key`, `value`) VALUES ('display_appointments', '1'); <br>
+                            INSERT INTO `settings` (`key`, `value`) VALUES ('display_pricing_plans', '1'); <br>
+                            CREATE TABLE `pricing_plans` (  <br>
+                            `plan_id` INT NOT NULL AUTO_INCREMENT,<br>
+                            `plan_name` VARCHAR(200),<br>
+                            `plan_price` NUMERIC(10),<br>
+                            `price_duration` VARCHAR(100),<br>
+                            `plan_currency` VARCHAR(10),<br>
+                            `features` TEXT,<br>
+                            `is_featured` ENUM('0','1') DEFAULT '0' NULL,<br>
+                            `featured_comment` VARCHAR(300) NULL,<br>
+                            `display_plan` ENUM('0','1')DEFAULT '1' NULL,<br>
+                            `icon` VARCHAR(50) NULL,<br>
+                            PRIMARY KEY (`plan_id`));<br>
+
+                            2- Extract and upload source files to your server.<br>
+                            3- Update the database.php file located into "root/application/config/database.php"<br>
+                            4- Update the email.php file located into "root/application/config/email.php"
+                            5- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.2.1 Released (22 October 2020):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Fixing design issue in RTL version.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.2 to 2.2.1</b><br>
+                            1- Extract and upload source files to your server.<br>
+                            2- Update the database.php file located into "root/application/config/database.php"<br>
+                            3- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.2 Released (5 October 2020):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Choose Light Mode or Dark mode from admin panel.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.1 to 2.2</b><br>
+                            1- Run the queries provided to your database from phpMyAdmin.<br>
+                            INSERT INTO `settings` (`key`, `value`, `default_value`) VALUES ('display_dark_mode', '0', '0');  <br>
+                            <br> 
+                            2- Extract and upload source files to your server.<br>
+                            3- Update the database.php file located into "root/application/config/database.php"<br>
+                            4- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.1 Released (27 August 2020):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Able / Disable Disqus Comments.<br>
+                            2- Adding Chat script <a href="#install-crisp">"Crisp".</a><br>
+                            3- Able / Disable Crisp Chat.<br>
+                        </p>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            <b>Upgrade from Version 2.0 to 2.1</b><br>
+                            1- Run the queries provided to your database from phpMyAdmin.<br>
+                            INSERT INTO `settings` (`key`, `default_value`) VALUES ('display_crisp', '0'); <br>
+                            INSERT INTO `settings` (`key`) VALUES ('crisp_id'); <br>
+                            INSERT INTO `settings` (`key`, `default_value`) VALUES ('display_disqus', '0');<br>
+                            <br> 
+                            2- Extract and upload source files to your server.<br>
+                            3- Update the database.php file located into "root/application/config/database.php"<br>
+                            4- Update the email.php file located into "root/application/config/email.php"
+                            5- You are done.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 2.0 –(Released: 12 June 2020):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;"> <br>
+                            <b>New Features</b><br>
+                            1- Appointments Module.<br>
+                            2- Requested Appointments module.<br>
+                            3- Adding whastapp in "Social media accounts".<br>
+                            4- Meta description for blog post.<br>
+                            5- Meta description for portfolio project.<br>
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 1.2 –(Released: 21 June 2019):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;"> <br>
+                            <b>New Features</b><br>
+                            1- Adding Google Recaptcha to contact form.<br>
+                            2- Admin control displaying sections of website like(Fun facts, Testimonials, Resume, Services, Clients, Blog, Portfolio, Contact form)<br>
+                            3- Admin control displaying on / off for article.<br>
+                            4- Admin control displaying on / off for project.<br>
+                            5- Adding Google Analytics.<br>
+                            <br>
+                            <b>Updated</b><br>
+                            2- Changing order of appearance to work history and education history.<br>
+                            2- Remove google+ social media and sharing with google plus.<br>
+                            3- Removing meta keywords that's not become useful for SEO.<br>
+                            4- Google map key changed from admin panel settings.<br>
+                            5- Database Updated.<br>
+                            6- Translation Updated.<br>
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 1.1 –(Released: 28 May 2019):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;"> <br>
+                            1- Adding direction based on language. <br>
+                            2- Gradient colors for layout. <br>
+                            3- Appear company name and school name  <br>
+                            4- Fixing responsive issue. <br>
+                            5- Disqus username changed from setting. <br>
+                            <b>You need to run this query: INSERT INTO `settings` (`key`, `value`) VALUES ('direction', 'ltr');</b><br>
+                            <b>You need to run this query: INSERT INTO `settings` (`key`, `value`) VALUES ('disqus_username', 'username');</b><br>
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <b>Version 1.0 –(Released:  29 March 2019):</b> <br>
+                        <p style="background-color: #f9f9f9; padding: 5px;">
+                            1- Initial Version
+                        </p>
+                    </div>
+                </div>
+                <div class="block" id="support">
+                    <h1 class="page-header">Support</h1>
+                    <p>
+                        - If you have any questions feel free to contact us at support@elmanawy.info <br>
+                        - If you need any modifications just contact support at support@elmanawy.info <br>
+                    </p>
+                    <br>
+                    <strong>Reach US: </strong><br>
+                    <a target="_blank" href="https://elmanawy.info/smarwa/tore"><img src="https://elmanawy.info/demo/banners/social_icons/marwa.png"></a>
+                    <a target="_blank" href="https://www.facebook.com/marwa.elmanawy.info"><img src="https://elmanawy.info/demo/banners/social_icons/facebook.png"></a>
+                    <a target="_blank" href="https://twitter.com/marwa_elmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/twitter.png"></a>
+                    <a target="_blank" href="https://plus.google.com/+marwaelmenawy"><img src="https://elmanawy.info/demo/banners/social_icons/google.png"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/marwa-el-manawy-b76344a0"><img src="https://elmanawy.info/demo/banners/social_icons/linkedin.png"></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCTSXnKoLgfZZk2MN_jLUOnA"><img src="https://elmanawy.info/demo/banners/social_icons/youtube.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/marwa.elmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/instagram.png"></a>
+                    <a target="_blank" href="https://github.com/marwaelmanawy"><img src="https://elmanawy.info/demo/banners/social_icons/github.png"></a>
+                    <br><br>
+                    <p><b>Best Regards, <a href="https://elmanawy.info/marwa/store">Marwa El-Manawy</a></b></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
